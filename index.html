@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paandu Wood Works</title>
     <style>
-        *{
-            padding: 0%;
-            margin: 0%;
+        * {
+            padding: 0;
+            margin: 0;
         }
-        
-        body{
-           
+
+        body {
             position: relative;
             font-family: Arial, sans-serif;
-          
         }
+
         nav {
             display: flex;
             justify-content: space-around;
             font-weight: 700;
             padding: 15px;
-            margin: 0;
             color: aliceblue;
             background-color: #000000aa;
         }
+
         nav div {
             display: flex;
             align-items: center;
         }
-        nav div h4 {
+
+        nav div h3 {
             margin: 0;
             padding: 0 20px;
         }
+
         nav div a {
             margin: 0 10px;
             text-decoration: none;
             color: #ffffff;
         }
+
         nav div a:hover {
             color: #007BFF;
         }
-        .bd{
+
+        .bd {
             font-family: 'Arial', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 5%;
         }
+
         video {
             position: absolute;
             top: 0;
@@ -56,6 +61,7 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
+
         }
 
         .content {
@@ -64,16 +70,25 @@
             color: white;
             text-align: center;
             padding: 20px;
-            height:100vh;
+            height: 100vh;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.463), rgba(0, 0, 0, 0.658));
+
         }
-       
+
+        @media only screen and (max-width: 600px) {
+            nav a {
+                display: none;
+            }
+
+
+        }
     </style>
 </head>
 
 <body>
-    <nav> 
+    <nav>
         <div>
-            <h4>Paandu Wood Works</h4>
+            <h3>Pandu Wood Works</h3>
         </div>
         <div>
             <a href="#">Home</a>
@@ -82,6 +97,7 @@
             <a href="#">Developer Info</a>
         </div>
     </nav>
+
     <video autoplay muted loop>
         <source src="video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -91,6 +107,6 @@
         <h1>Your Content Here</h1>
         <p>This is an example of using a video as a background.</p>
     </div>
-</div>
 </body>
+
 </html>
