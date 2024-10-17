@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pandu Wood Works</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        /* Ensure images maintain their aspect ratio */
+        .swiper-slide img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        /* Custom aspect ratio for different screen sizes */
+        @media (min-width: 640px) {
+            .swiper-slide {
+                height: 50vh;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .swiper-slide {
+                height: 50vh;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .swiper-slide {
+                height: 50vh;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gray-800 text-white">
     <!-- Navigation Bar -->
@@ -52,6 +81,35 @@
         </div>
     </section>
 
+    <!-- Image Swiper Section (Auto-swipable) -->
+    <section class="py-12 bg-white text-gray-800">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">Our Recent Works</h2>
+
+            <!-- Swiper Container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Add images inside swiper-slide -->
+                    <div class="swiper-slide">
+                        <img src="1.jpg" alt="Custom Wood Table" class="rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="2.jpg" alt="Wooden Cabinet Design" class="rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="3.jpg" alt="Office Furniture" class="rounded-lg">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="4.jpg" alt="Wooden Home Decor" class="rounded-lg">
+                    </div>
+                </div>
+
+                <!-- Add pagination if needed -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Us Section -->
     <section class="py-12 bg-gray-900 text-white">
         <div class="container mx-auto text-center px-4 md:px-8">
@@ -66,8 +124,24 @@
         <p class="text-gray-500">© 2024 Pandu Wood Works. All Rights Reserved.</p>
     </footer>
 
-    <!-- Script for Mobile Menu Toggle -->
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Enable autoplay
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            // Enable pagination (dots navigation)
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            loop: true,
+        });
+
+        // Script for Mobile Menu Toggle
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         
