@@ -48,14 +48,14 @@
 </head>
 <body class="bg-gray-800 text-white">
     <!-- Navigation Bar -->
-    <nav class="bg-gray-900 bg-opacity-80 p-4 fixed top-0 w-full z-20">
+    <nav class="bg-gray-800  bg-opacity-90 p-4 fixed top-0 w-full z-20">
         <div class="container mx-auto flex justify-between items-center">
             <h3 class="text-xl md:text-2xl font-bold">Pandu Wood Works</h3>
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="hover:text-blue-400">Home</a>
-                <a href="#" class="hover:text-blue-400">About Us</a>
-                <a href="#" class="hover:text-blue-400">Contact Us</a>
-                <a href="#" class="hover:text-blue-400">Developer Info</a>
+            <div class="hidden font-bold md:flex space-x-4">
+                <a href="index.html" class="hover:text-blue-900 ">Home</a>
+                <a href="About.html" class="hover:text-blue-400">About Us</a>
+                <a href="contact.html" class="hover:text-blue-400">Contact Us</a>
+                <a href="https://chetankambleofficial.github.io/portfolio/#" class="hover:text-blue-400">Developer Info</a>
             </div>
             <!-- Mobile Menu Toggle -->
             <button class="md:hidden text-white focus:outline-none" id="menu-toggle">
@@ -66,10 +66,10 @@
         </div>
         <!-- Mobile Menu (Initially Hidden) -->
         <div class="hidden md:hidden" id="mobile-menu">
-            <a href="#" class="block text-center py-2 hover:bg-gray-700">Home</a>
-            <a href="#" class="block text-center py-2 hover:bg-gray-700">About Us</a>
-            <a href="#" class="block text-center py-2 hover:bg-gray-700">Contact Us</a>
-            <a href="#" class="block text-center py-2 hover:bg-gray-700">Developer Info</a>
+            <a href="index.html" class="block text-center py-2 hover:bg-gray-700">Home</a>
+            <a href="About.html" class="block text-center py-2 hover:bg-gray-700">About Us</a>
+            <a href="contact.html" class="block text-center py-2 hover:bg-gray-700">Contact Us</a>
+            <a href="https://chetankambleofficial.github.io/portfolio/#" class="block text-center py-2 hover:bg-gray-700">Developer Info</a>
         </div>
     </nav>
 
@@ -182,15 +182,47 @@
     
 
 
-    <!-- About Us Section -->
-    <section class="py-12 bg-gray-900 text-white">
-        <div class="container mx-auto text-center px-4 md:px-8">
-            <h2 class="text-2xl md:text-4xl font-bold mb-6">About Pandu Wood Works</h2>
-            <p class="text-lg leading-relaxed mb-6">With over 20 years of experience, Pandu Wood Works specializes in delivering top-quality, custom woodwork solutions. Whether it’s custom furniture, cabinetry, or intricate wood carvings, our commitment to quality craftsmanship and attention to detail is unparalleled.</p>
-            <a href="#" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full">Learn More</a>
-        </div>
-    </section>
+   
 
+    <section class="py-12 bg-gray-800 text-white">
+      <div class="container mx-auto px-4 md:px-8">
+          <h2 class="text-2xl md:text-4xl font-bold mb-6 text-center">Our Location</h2>
+          <p class="text-lg text-center leading-relaxed mb-8">
+              Visit our workshop or reach out to us at the following address and contact details.
+          </p>
+  
+          <div class="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-12">
+              <div class="bg-gray-900 p-6 rounded-lg shadow-lg">
+                  <h3 class="text-xl font-bold mb-4">Workshop Address</h3>
+                  <p class="text-lg leading-relaxed">
+                      Pandu Wood Works<br>
+                      Lines Club Road, bharath petrol Bunk backSide<br>
+                      Kopal, Karnataka 583231<br>
+                      India
+                  </p>
+                  <p class="text-lg mt-4">
+                      <strong>Phone:</strong> +91-9900835351<br>
+                      <strong>Email:</strong> <a href=" class="text-blue-400 hover:underline">info@panduwoodworks.com</a>
+                  </p>
+              </div>
+              
+              <!-- Map Embed -->
+              <div class="w-full md:w-1/2 h-64">
+                  <iframe class="w-full h-full rounded-lg shadow-lg" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d618.7946068768981!2d76.14945081667356!3d15.353017120514048!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1729324634015!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 
+              </div>
+          </div>
+      </div>
+  </section>
+
+   <!-- About Us Section -->
+   <section class="py-12 bg-gray-900 text-white">
+    <div class="container mx-auto text-center px-4 md:px-8">
+        <h2 class="text-2xl md:text-4xl font-bold mb-6">About Pandu Wood Works</h2>
+        <p class="text-lg leading-relaxed mb-6">With over 20 years of experience, Pandu Wood Works specializes in delivering top-quality, custom woodwork solutions. Whether it’s custom furniture, cabinetry, or intricate wood carvings, our commitment to quality craftsmanship and attention to detail is unparalleled.</p>
+        <a href="About.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full">Learn More</a>
+    </div>
+</section>
     <!-- Footer -->
     <footer class="text-white body-font">
         <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -205,16 +237,16 @@
               <h2 class="title-font font-medium text-yellow-200 tracking-widest text-sm mb-3">CATEGORIES</h2>
               <nav class="list-none mb-10">
                 <li>
-                  <a class="text hover:text-gray-800">First Link</a>
+                  <a href="index.html" class="text hover:text-gray-800">Home</a>
                 </li>
                 <li>
-                  <a class="text hover:text-gray-800">Second Link</a>
+                  <a href="About.html" class="text hover:text-gray-800">About us</a>
                 </li>
                 <li>
-                  <a class="text hover:text-gray-800">Third Link</a>
+                  <a href="contact.html" class="text hover:text-gray-800">contact us</a>
                 </li>
                 <li>
-                  <a class="text hover:text-gray-800">Fourth Link</a>
+                  <a href="https://chetankambleofficial.github.io/portfolio/#" class="text hover:text-gray-800">Developer info</a>
                 </li>
               </nav>
             </div>
